@@ -2,7 +2,9 @@
 //
 // The front page itself is drawn ahead of time as entry.png, and this
 // program has one job only: put that exact image at /output/entry.png
-// for the grader. Run it locally with:
+// for the grader. The image is the whole entry — no network, no
+// randomness, no second asset — so the copy is byte for byte the file
+// the judge sees. Run it locally with:
 //   mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 
 import { copyFileSync } from 'node:fs';
